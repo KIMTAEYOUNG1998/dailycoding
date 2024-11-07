@@ -1,0 +1,31 @@
+2024-11-06 19:01:41,795 - ERROR - 검색창 접근 오류 발생
+Traceback (most recent call last):
+  File "C:\git\dailycoding\namuwiki\namuwiki_crawler.py", line 44, in start_crawler
+    search_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'input[name="query"]')))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\human\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BE903AF5+28005]
+	(No symbol) [0x00007FF7BE8683F0]
+	(No symbol) [0x00007FF7BE70580A]
+	(No symbol) [0x00007FF7BE755A3E]
+	(No symbol) [0x00007FF7BE755D2C]
+	(No symbol) [0x00007FF7BE79EA97]
+	(No symbol) [0x00007FF7BE77BA7F]
+	(No symbol) [0x00007FF7BE79B8B3]
+	(No symbol) [0x00007FF7BE77B7E3]
+	(No symbol) [0x00007FF7BE7475C8]
+	(No symbol) [0x00007FF7BE748731]
+	GetHandleVerifier [0x00007FF7BEBF646D+3118813]
+	GetHandleVerifier [0x00007FF7BEC46CC0+3448624]
+	GetHandleVerifier [0x00007FF7BEC3CF3D+3408301]
+	GetHandleVerifier [0x00007FF7BE9CA44B+841403]
+	(No symbol) [0x00007FF7BE87344F]
+	(No symbol) [0x00007FF7BE86F4C4]
+	(No symbol) [0x00007FF7BE86F65D]
+	(No symbol) [0x00007FF7BE85EBB9]
+	BaseThreadInitThunk [0x00007FFF6B957374+20]
+	RtlUserThreadStart [0x00007FFF6D59CC91+33]
+
